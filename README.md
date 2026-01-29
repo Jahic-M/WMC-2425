@@ -1,40 +1,36 @@
-[LearningPath.md](https://github.com/user-attachments/files/24888286/LearningPath.md)
-# Learning Path - WMC5
+# HTTP Networking Course – Aufgaben
 
-Create a WMC repository for your exercises. Name it "WMC5-2425-YourLastnameYourFirstName".
-To keep track of your work, copy this file (LearningPath.md) into your repo and record your progress in the tables below.
-Document your progress by creating summaries and programming the examples. Push this documentation to your GitHub repo to verify the work you've completed.
+Dieses Projekt fasst die wichtigsten Inhalte und praktischen Aufgaben aus dem Video
+„Full HTTP Networking Course – Fetch and REST APIs in JavaScript“ zusammen.
 
-1. Finish either the JavaScript Course on Codecademy or the one from freeCodeCamp
+Der Fokus liegt auf dem Verständnis von HTTP-Kommunikation, dem Arbeiten mit der
+Fetch API sowie auf der Verarbeitung von URLs und HTML-Inhalten.
 
-   | Task      | Duration| Progress (time or %) | Completed |
-   |-----------|-----------|-----------|-----------|
-   | [Codecademy - Introdcution to javaScript](https://www.codecademy.com/learn/introduction-to-javascript)|   15h       | 100 %        |yes      |
-   | [freeCodeCamp - Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)|   3h 27 min       | 100 %       |yes       |
+## Inhalte
 
-2. HTTP Networking - Work through the following topics
+- Grundlagen von HTTP (Requests, Responses, Statuscodes)
+- Arbeiten mit GET- und POST-Anfragen
+- Fetch API und JSON-Verarbeitung
+- Fehlerbehandlung bei HTTP-Anfragen
+- Normalisieren von URLs
+- Extrahieren von Links aus HTML
+- Einfacher Web-Crawler für interne Seiten
+- Erstellen eines Reports über gefundene Seiten
 
-   | Task      | Duration| Progress (time or %) | Completed |
-   |-----------|-----------|-----------|-----------|
-   | [Article: What is HTTP](https://www.freecodecamp.org/news/what-is-http/) |    1h      | 100 %        |yes      |
-   | [Full HTTP Networking Course – Fetch and REST APIs in JavaScript](https://www.youtube.com/watch?v=2JYT5f2isg4)|   5h 9min       | 100 %       |yes    |
+## Projektstruktur
 
-3. Watch the following videos about basic JavaScript techniques for web development
+src/
+ ├── httpBasics.js
+ ├── fetchJson.js
+ ├── urlTools.js
+ ├── crawl.js
+ ├── report.js
+ └── index.js
 
-   | Task      | Duration| Progress (time or %) | Completed |
-   |-----------|-----------|-----------|-----------|
-   | [Javascript Nuggets - Callback Functions](https://www.youtube.com/watch?v=GWq0XETTOTk&list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ&index=13) |    13min      | 100 %       |yes       |
-   | [Javascript Nuggets - Callback Hell](https://www.youtube.com/watch?v=bx9xYPt2tdc&list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ&index=14)|    7min      | 100 %       |yes       |
-   | [Javascript Nuggets - Promises](https://www.youtube.com/watch?v=IBjmTlShf6U&list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ&index=15) |    13min      | 100 % or        |yes       |
-   | [Javascript Nuggets - Promises Example](https://www.youtube.com/watch?v=GKVA6jYrgKc&list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ&index=16)|    13min      | 100 %        |yes      |
-   | [Javascript Nuggets - Async / Await](https://www.youtube.com/watch?v=iHrVo5fvmzE&list=PLnHJACx3NwAfRUcuKaYhZ6T5NRIpzgNGJ&index=17)|    17min      | 100 %       |yes       |
+## Verwendung
 
-4. Work through the following video about Node.js and Express
+HTTP-Grundlagen testen:
+node src/httpBasics.js
 
-   | Task      | Duration| Progress (time or %) | Completed |
-   |-----------|-----------|-----------|-----------|
-   | [Node.js and Express.js - Full Course](https://www.youtube.com/watch?app=desktop&v=Oe421EPjeBE) |    8h 17min      | 100 %        |yes      |
-
-## Optional Additional Sources
-
-- [Learn JavaScript DOM Manipulation – Tutorial for Beginners](https://www.youtube.com/watch?v=IWRS_AM2fiE)
+Web-Crawler starten:
+node src/index.js https://example.com
